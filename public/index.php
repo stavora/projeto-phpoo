@@ -16,3 +16,5 @@ if (preg_match('/\.(?:png|jpg|jpeg|gif)$/', $_SERVER["REQUEST_URI"])) {
     require '../App/Functions/Functions_twig.php';
     require 'bootstrap/bootstrap.php';
 }
+
+?>

@@ -3,7 +3,7 @@ RewriteEngine on
 
 AddHandler application/x-httpd-php74 .php
 <IfModule mod_suphp.c>
-suPHP_ConfigPath /opt/php74/lib
+suPHP_ConfigPath /Tools/php/lib
 </IfModule>
 
 <IfModule mod_security.c>
