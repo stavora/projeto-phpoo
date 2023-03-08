@@ -19,3 +19,5 @@ class Redirect{
     	return header("Location:$previous");
     }
 }
+
+?>

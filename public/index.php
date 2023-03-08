@@ -1,6 +1,6 @@
 <?php
  
-print_r($_SERVER["REQUEST_URI"]);
+// print_r($_SERVER["REQUEST_URI"]);
 
 if (preg_match('/\.(?:png|jpg|jpeg|gif)$/', $_SERVER["REQUEST_URI"])) {
     return false;
@@ -8,8 +8,8 @@ if (preg_match('/\.(?:png|jpg|jpeg|gif)$/', $_SERVER["REQUEST_URI"])) {
     
     session_start();
 
-    define('DEFAULT_CONTROLLER', 'home');
-    define('DEFAULT_METHOD', 'index');
+    define('DEFAULT_CONTROLLER','home');
+    define('DEFAULT_METHOD','index');
 
     require '../vendor/autoload.php';
     // require '../App/Functions/helpers.php';
