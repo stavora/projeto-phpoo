@@ -1,4 +1,13 @@
 <?php
+use App\Classes\Template;
+
+// Inicia o template
+$template = new Template;
+$twig = $template->init();
+
+dump($twig);
+
+
 /** 
 * Chamando o controller digitado na url
 * http://localhost:8000/controller
@@ -19,4 +28,3 @@ $method = $callMethod->method($controller);
 */
 $controller->$method();
 
-?>

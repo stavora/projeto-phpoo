@@ -19,5 +19,3 @@ class Uri {
 		return $this->uri;
 	}
 }
-
-?>

@@ -27,6 +27,7 @@ class Controller {
 
 	public function controller() {
 		$controller = $this->getController();
+		dump($controller);
 		foreach (self::FOLDERS_CONTROLLER as $folderController) {
 			if (class_exists(self::NAMESPACE_CONTROLLER . $folderController . '\\' . $controller)) {
 				return self::NAMESPACE_CONTROLLER . $folderController . '\\' . $controller;
@@ -36,4 +37,3 @@ class Controller {
 	}	
 }
 
-?>

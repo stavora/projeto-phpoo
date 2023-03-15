@@ -25,5 +25,3 @@ class Method{
         return DEFAULT_METHOD;
     }
 }
-
-?>
